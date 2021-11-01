@@ -35,6 +35,11 @@ class MainActivity : AppCompatActivity() {
         }
 
         Log.d(TAG, "onCreate: MainActivity")
+
+        val myList = listOf("Red", "Green", "Blue")
+        for(color in myList) {
+            Log.d(TAG, "onCreate: color")
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
