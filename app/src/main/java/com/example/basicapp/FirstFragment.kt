@@ -36,7 +36,7 @@ class FirstFragment : Fragment() {
             findNavController().navigate(R.id.action_FirstFragment_to_SecondFragment)
         }
 
-        binding.textviewFirst.text = "Hello Android!"
+        binding.textviewFirst.text = getString(R.string.hello_factorio)
     }
 
     override fun onDestroyView() {
