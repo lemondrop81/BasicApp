@@ -1,6 +1,7 @@
 package com.example.basicapp
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -23,6 +24,8 @@ class FirstFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+        Log.d(TAG, "onCreateView: First fragment")
 
         _binding = FragmentFirstBinding.inflate(inflater, container, false)
         return binding.root
